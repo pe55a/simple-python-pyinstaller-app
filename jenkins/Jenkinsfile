@@ -9,6 +9,7 @@ pipeline {
             }
             steps {
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py'
+                sh 'python sources/add2vals.py 9 5'
             }
         }
         stage('Test') {
